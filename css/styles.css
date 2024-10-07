@@ -1,0 +1,541 @@
+/* 
+	reset CSS
+
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ---reset done--- */
+
+body {
+	width: max-content;
+	height: 100%;
+	margin: 0 auto;
+	color: #4B4B4B;
+	font-size: 20px;
+	font-family: bookmania, serif;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 4em;
+	font-family: termina, sans-serif;
+	font-weight: 200;
+	font-style: normal;	
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5em;
+	color: #0F60C1;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+}
+
+h3:first-of-type {
+	margin-right: 41px;
+}
+
+h3:last-of-type {
+	text-align: right;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+img.center {
+	margin: 0 auto;
+	display: block;
+}
+
+div.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+div.vertical-align {
+	transform: translateY(-50%);
+	margin: 50vh auto 0;
+}
+
+a#start-btn {
+	position: fixed;
+	bottom: 74px;
+	left: 0;
+	right: 0;
+	top: auto;
+}
+
+a.button {
+	background-color: #C69C6D;
+	color: white;
+	width: 223px;
+	border-radius: 52px;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.4em;
+	font-family: helvetica;
+	text-align: center;
+	padding: 13px 0;
+	line-height: 1.2;
+	transition: transform 400ms ease;
+	z-index: 1;
+}
+
+a.button:hover {
+	transform: scale(1.1,1.1);
+}
+
+a.button.begin {
+	position: fixed;
+	top: calc(50vh - 30px);
+}
+
+a.button.begin.left {
+	left: 50px;
+}	
+
+a.button.begin.right {
+	right: 50px;
+}
+
+a.choices {
+	font-size: 22px;
+	margin-top: 60px;
+}
+
+img#start {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+div.clear {
+	clear: both;
+}
+
+/* video */
+div#video {
+	width: 60vw;
+	height: auto;
+}
+
+video {
+	box-shadow: 0px 3px 29px #000000;
+	border: 3px solid #707070;
+	border-radius: 50px;
+}
+
+/* verhaal & einde*/
+div#verhaal, div#einde {
+	width: 800px;
+}
+
+#verhaal p, p.bigger {
+	font-size: 27px;
+	text-align: center;
+}
+
+#einde p {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#einde {
+	margin: auto auto;
+}
+
+h2.besparingTotaal {
+	margin-bottom: 20px;
+}
+
+/* plattegrond */
+div.container.scrollable {
+	position: static;
+	height: auto;
+}
+
+div#plattegrond h2:first-of-type, div#einde h2:first-of-type {
+	margin: 70px auto 0;
+}
+
+img.blue-line {
+	margin: 0 auto 50px;
+}
+
+#plattegrond .blue-line {
+	margin-bottom: 10px;
+}
+
+#plattegrond h3 {
+	text-align: center;
+	margin-bottom: 50px;
+	float: none;
+}
+
+#situatie h2, h2.besparingTotaal {
+	font-size: 36px;
+}
+
+#situatie h2 {
+	text-align: left;
+}
+
+div#situatie {
+	width: 280px;
+	position: fixed;
+	top: 10px;
+	left: 30px;
+}
+
+div#situatie img {
+	position: fixed;
+    top: -68px;
+    left: -65px;
+}
+
+div#situatie ul {
+	margin: 10px 0 0 70px;
+	font-weight: 300;
+}
+
+#plattegrond div:last-child {
+	position: relative;
+	margin: 150px auto 0;
+	width: 1178px;
+}
+
+img.plattegrond-img {
+	position: absolute;
+	mix-blend-mode: multiply;
+	cursor: pointer;
+	transition: transform 400ms ease;
+}
+
+img.plattegrond-img:hover {
+	transform: scale(1.2, 1.2);
+}
+
+img#plattegrond-bg {
+	margin: 0 auto;
+	width: 866px;
+	height: auto;
+}
+
+img#gas {
+	top: 143px;
+    left: 382px;
+}
+
+img#glas {
+	top: -80px;
+    left: 448px;
+}
+
+img#kozijnen {
+    top: 202px;
+    left: -4px;
+}
+
+img#radiator {
+    top: 103px;
+    right: 3px;
+}
+
+img#warmtepomp {
+	bottom: -38px;
+    right: 454px;
+}
+
+img#spouwmuren {
+	bottom: 13px;
+    right: -71px;
+}
+
+/* keuzes */
+img.kader {
+	position: fixed;
+	z-index: 2;
+}
+
+#kader-top {
+	top: -94px;
+	width: 100%;
+}
+
+#kader-bottom {
+	bottom: -94px;
+	width: 100%;
+}
+
+#kader-left {
+	left: -23px;
+	top: 0;
+	height: 100%;
+}
+
+#kader-right {
+	right: -23px;
+	top: 0;
+	height: 100%;
+}
+
+#hoek-lb {
+	top: 129px;
+	left: 167px;
+}
+
+#hoek-ro {
+	bottom: 136px;
+	right: 167px;
+}
+
+#home-btn, #terug-btn {
+	top: 163px;
+	cursor: pointer;
+	transition: transform 400ms ease;
+	width: 88px;
+}
+
+#home-btn {
+    left: 227px;
+}
+
+#terug-btn {
+	left: 320px;
+}
+
+#home-btn:hover, #terug-btn:hover {
+	transform: scale(1.2,1.2);
+}
+
+div.box {
+	width: 654px;
+}
+
+div.box, div.uitkomst {
+	margin: 160px auto 180px;
+}
+
+div.uitkomst {
+	width: max-content;
+}
+
+div.keuze {
+	width: 297px;
+	height: calc(136px - 57px);
+	text-align: center;
+	padding-top: 57px;
+	float: left;
+	margin: 50px 0;
+	cursor: pointer;
+	transition: transform 400ms ease;
+
+}
+
+div.keuze:hover {
+	transform: scale(1.1,1.1);
+}
+
+div.keuze.gekozen {
+	transform: scale(1.1,1.1);
+}
+
+div.keuze p {
+	font-family: helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+div.keuze1 {
+	background-image: url('../img/keuze1.svg');
+	margin-right: 55px;
+	background-repeat: no-repeat;
+}
+
+div.keuze2 {
+	background-image: url('../img/keuze2.svg');
+	background-repeat: no-repeat;
+}
+
+div.info, div.info p {
+	display: none;
+}
+
+/* de 3e laag (de uitkomsten) */
+div.uitkomst p {
+	margin-bottom: 30px;
+}
+
+div.besparing {
+	width: max-content;
+	margin: 0 auto 45px;
+}
+
+a.artikel {
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 18px;
+	transition: color 200ms ease;
+}
+
+a.artikel:hover {
+	color: #C69C6D;
+}
+
+div.infoImg {
+	float: left;
+	background-image: url('../img/datavis/datavis-bg.svg');
+	background-repeat: no-repeat;
+	width: 502px;
+	height: 457px;
+	margin-right: 90px;
+	background-size: contain;
+}
+
+div.infoImg img {
+	width: 370px;
+	height: auto;
+	border-radius: 50px;
+	margin: 57px auto 0;
+	transition: transform 400ms ease-in-out 100ms;
+	box-shadow: 0px 3px 10px #00000065;;
+}
+
+div.infoImg img:hover {
+	transform: scale(1.5,1.5);
+}
+
+div.infoText {
+	width: 654px;
+	float: left;
+}
+
+/* media queries */
+@media all and (max-width: 1920px) {
+	#home-btn {
+		left: 165px;
+		top: 130px;
+	}
+
+	#terug-btn {
+		left: 261px;
+		top: 130px;
+	}
+
+	#hoek-lb {
+		top: 74px;
+		left: 116px;
+	}
+
+	#hoek-ro {
+		bottom: 81px;
+		right: 122px;
+	}
+
+}
+
+@media all and (max-width: 1440px) {
+	a.button {
+		width: 175px;
+		font-size: 1.2em;
+	}
+
+	#home-btn {
+		left: 177px;
+	}
+
+	#terug-btn {
+		left: 270px;
+	}
+
+	#hoek-lb {
+		top: 24px;
+		left: 109px;
+	}
+
+	#hoek-ro {
+		bottom: 35px;
+		right: 120px;
+	}
+
+}
